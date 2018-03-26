@@ -149,8 +149,6 @@ class City {
 
 
 
-
-
 void array_shift(int [] array) {
 
   for (int i=1; i<array.length; i++) {
