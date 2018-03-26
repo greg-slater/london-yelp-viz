@@ -8,7 +8,7 @@ This is a basic proof of concept of visualising data grabbed from the [Yelp API]
 
 The Search endpoint was used to find all music venues in the London area, and then those venues used to query the Business Lookup endpoint to grab opening hours for each.
 
-Data was then re-formatted into a useable JSON file for Processing.
+Data was then re-formatted into a useable JSON file (see [/data folder](https://github.com/greg-slater/london_yelp_viz/tree/master/data) for Processing.
 
 The Processing sketch simply runs through days of the week and hours of the day, lighting up venues on a map background when the venue is open.
 
@@ -18,3 +18,5 @@ The aim is to show the 'pulse' like pattern of activity, and to that end a dynam
 ### Demo
 
 The London.mov file demonstrates one cycle. Possible further development will be adding in different business categories and possibly turning into a grid-like comparison of patterns across different global cities.
+
+London.png is just a screengrab.
