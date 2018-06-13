@@ -62,11 +62,11 @@ function  preload(){
   // load data for each day into tables container
   for (var day=0; day<7; day++){
 
-    table = loadTable('location_hours_day_' + str(day) + '.csv', 'csv', 'header');
+    table = loadTable('data/location_hours_day_' + str(day) + '.csv', 'csv', 'header');
     tables.push(table);
   }
   // load JSON for story controls and text
-  stories = loadJSON('stories.json');  // load in location and text info for stories
+  stories = loadJSON('data/stories.json');  // load in location and text info for stories
 }
 
 function setup() {
