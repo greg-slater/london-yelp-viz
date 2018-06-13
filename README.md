@@ -1,8 +1,10 @@
-# london_yelp_viz
-Visualisation of yelp business hours data across London
+# London Yelp Visualisation
+Visualisation of nightlife business opening hours data across London
 
 
 ### Overview
+
+See a working version [here](greg-slater.github.io/yelp).
 
 The aim of this project is to visualise the spatial and temporal patterns of nightlife-related business opening hours in London. It was built as my contribution to a group university visualisation project with the theme 'The Pulse of the City'.
 
