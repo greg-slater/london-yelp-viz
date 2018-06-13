@@ -4,19 +4,15 @@ Visualisation of yelp business hours data across London
 
 ### Overview
 
-This is a basic proof of concept of visualising data grabbed from the [Yelp API](https://www.yelp.com/developers/documentation/v3) using some python code.
+The aim of this project is to visualise the spatial and temporal patterns of nightlife-related business opening hours in London. It was built as my contribution to a group university visualisation project with the theme 'The Pulse of the City'.
 
-The Search endpoint was used to find all music venues in the London area, and then those venues used to query the Business Lookup endpoint to grab opening hours for each.
-
-Data was then re-formatted into a useable JSON file (see [/data folder](https://github.com/greg-slater/london_yelp_viz/tree/master/data)) for Processing.
-
-The Processing sketch simply runs through days of the week and hours of the day, lighting up venues on a map background when the venue is open.
-
-The aim is to show the 'pulse' like pattern of activity, and to that end a dynamic line chart at the bottom tracks the total number of venues open in heart-rate monitor style.
+Data was collected from the Yelp API, analysed and formatted using Python. The visualisation itself was created using [P5](https://github.com/processing/p5.js), with the libraries [Mappa](https://github.com/cvalenzuela/Mappa) and [P5.gui](https://github.com/bitcraftlab/p5.gui).
 
 
-### Demo
+### Visualisation
 
-The London.mov file demonstrates one cycle. Possible further development will be adding in different business categories and possibly turning into a grid-like comparison of patterns across different global cities.
+Through combining interactive mapping and animation the aim is to effectively show, and allow the user to explore, the different patterns in the data. A counter running through hours of the day and days of the week controls the display of a business on the map (if it is open at the current day and time it is displayed), with colours indicating the different business categories.
 
-London.png is just a screengrab.
+Users can control the speed of the time cycle, pause and play the animation, select or de-select particular business categories, and display a dynamic stacked bar chart which shows the number of businesses open over the week.
+
+A story mode can take the user through a simple narrative which zooms to different points in London while controlling various elements in order to dempnstrate some of the clearest patterns and introduce the different functionality.
